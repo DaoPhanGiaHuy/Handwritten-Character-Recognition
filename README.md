@@ -1,38 +1,27 @@
-# Handwritten-Character-Recognition
-The Handwriting Recognition System is an AI-based application designed to recognize and classify handwritten digits or characters. This system leverages deep learning techniques, specifically Convolutional Neural Networks (CNNs), to accurately identify and interpret handwritten text. The model is trained on the MNIST dataset, which consists of images of handwritten digits, and can be extended to recognize other handwritten characters or symbols.
+# Handwriting Recognition System
 
-The core functionality of the system includes:
+This AI-powered system recognizes and classifies handwritten digits using **Convolutional Neural Networks (CNNs)**. Trained on the **MNIST dataset**, the model can identify handwritten digits and is easily extendable to recognize other characters or symbols.
 
-Image Preprocessing: The system receives an image of handwritten text, preprocesses it by converting it into grayscale, applying thresholding for better contrast, and resizing it to match the input dimensions required by the model.
+## Key Features:
 
-Model Training: The system utilizes a CNN model, which is trained using labeled images of handwritten digits (from the MNIST dataset) to learn the patterns and features of each digit.
+- **Image Preprocessing**: Converts input images to grayscale, applies thresholding, and resizes them to fit the model's input.
+- **Model Training**: The CNN model is trained on the MNIST dataset to learn digit patterns.
+- **Prediction**: The system predicts the digit from any new image and provides **softmax probabilities** for confidence levels.
+- **Web Deployment**: The system is deployed via a **Flask** web application, where users can upload images in **base64 format** to receive predictions via a **RESTful API**.
 
-Prediction: Once the model is trained, it can predict the digit or character from any new handwritten image. It returns the recognized digit and provides the softmax probabilities for each possible class, allowing users to interpret the confidence level of the prediction.
+## Technologies Used:
 
-Deployment: The system is deployed as a web application using Flask, where users can upload an image of handwritten text (in base64 format) and receive a prediction via a RESTful API.
+- **Python**
+- **TensorFlow (Keras)**
+- **Flask** (for web deployment)
+- **MNIST dataset**
+- **PIL (Pillow)** for image processing
+- **OpenCV** (optional for advanced preprocessing)
 
-This project demonstrates the ability to leverage machine learning and deep learning techniques for recognizing handwritten digits and can be adapted to support different languages, fonts, or more complex handwriting styles.
+## Use Cases:
 
-Technologies Used:
+- **Automatic number plate recognition** (for digits)
+- **Digit recognition** in forms or checks
+- **Assistive technology** for the visually impaired
 
-Python
-
-TensorFlow (Keras)
-
-Flask (for web deployment)
-
-MNIST dataset
-
-PIL (Pillow) for image processing
-
-OpenCV (optional for advanced preprocessing)
-
-Use Cases:
-
-Automatic number plate recognition (in the case of digits)
-
-Digit recognition in forms or checks
-
-Assistive technology for the visually impaired
-
-This project serves as a fundamental example of handwriting recognition, which can be extended and applied to various real-world applications where recognizing handwritten information is crucial.
+This project demonstrates handwriting recognition using deep learning, and can be adapted for various applications requiring handwritten text recognition.
