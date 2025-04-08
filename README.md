@@ -1,6 +1,6 @@
 # Handwriting Recognition System
 
-This AI-powered system recognizes and classifies handwritten digits using **Convolutional Neural Networks (CNNs)**. Trained on the **MNIST dataset**, the model can identify handwritten digits and is easily extendable to recognize other characters or symbols.
+A CNN-based AI system that recognizes handwritten digits from images using the MNIST dataset. Includes a Flask API and web UI for live predictions.
 
 ## Key Features:
 
